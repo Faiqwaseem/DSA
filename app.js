@@ -475,17 +475,44 @@
 // }
 
 // Q16 — Find the Largest Difference
-const arr = [10, 5, 20, 8, 15];
-let large = arr[0];
-let small = arr[0];
-for (let i = 0; i < arr.length; i++){
-    if (arr[i] > large) {
-        large = arr[i]
-    }
-    else if (arr[i] < small) {
-        small = arr[i]
-    }
+// const arr = [10, 5, 20, 8, 15];
+// let large = arr[0];
+// let small = arr[0];
+// for (let i = 0; i < arr.length; i++){
+//     if (arr[i] > large) {
+//         large = arr[i]
+//     }
+//     else if (arr[i] < small) {
+//         small = arr[i]
+//     }
     
-}
-let subract = large - small
-console.log(subract)
+// }
+// let subract = large - small
+// console.log(subract)
+
+// Q17 — Move All Zeros to the End
+// const arr = [0, 5, 0, 3, 8, 0, 2];
+
+// let newArr = []
+// for (let i = 0; i < arr.length; i++){
+//     if (arr[i] !== 0) {
+//         newArr.push(arr[i])
+//     }
+// }
+// for (let i = 0; i < arr.length; i++){
+//     if (arr[i] === 0) {
+//         newArr.push(arr[i])
+//     }
+// }
+// console.log(newArr)
+
+// Q18 — Find Missing Number
+// const arr = [1, 2, 3, 5, 6];
+// let num = 1;
+// for (let i = 0; i < arr.length; i++){
+//     if (arr[i] === num) {
+//         num++
+//     }
+// }
+// console.log(num)
+
