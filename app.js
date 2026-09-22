@@ -516,3 +516,50 @@
 // }
 // console.log(num)
 
+// Q18 — Find Missing Number
+
+// const arr = [3, 1, 5, 2, 6];
+// let find;
+// for (let i = 0; i < arr.length; i++){
+//     let count = 0
+//     for (let j = 0; j < arr.length; j++){
+//         if (arr[i] === arr[j]) {
+//            count++
+//        }
+//     }
+// }
+// console.log(find)
+
+
+// const arr = [4, 7, 2, 9, 5];
+// const target = 9;
+// let found = false
+// for (let i = 0; i < arr.length; i++){
+//     if (arr[i] === target) found = true
+//     break
+// }
+// if (found) {
+//     console.log("Found")
+// }
+// else {
+//     console.log("No Found")
+// }
+
+
+// let find;
+// const arr = [1, 3, 4, 2, 2];
+
+// for (let i = 0; i < arr.length; i++){
+//     let count = 0;
+//     for (let j = 0; j < arr.length; j++){
+//         if (arr[i] === arr[j]) {
+//             count++
+//         }
+//     }
+//     if (count  === 2) {
+//         find = count
+//     }
+// }
+// console.log(find)
+
+const arr = [10, 5, 20, 8, 15];
