@@ -578,3 +578,17 @@
 // }
 // console.log(secondSmallest, smallest)
 
+// 🔥 Q21 — Count Even & Odd Numbers
+// const arr = [10, 5, 8, 7, 3, 12, 4];
+// let evenCount = 0;
+// let oddCount = 0;
+
+// for (let i = 0; i < arr.length; i++){
+//     if (arr[i] % 2 === 0) {
+//         evenCount++
+//     }
+//     else {
+//         oddCount++
+//     }
+// }
+// console.log(evenCount, oddCount)
