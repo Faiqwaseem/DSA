@@ -592,3 +592,13 @@
 //     }
 // }
 // console.log(evenCount, oddCount)
+
+// 🔥 Q22 — Reverse a Number
+// const num = 12345;
+// let arr = [];
+// let newnum = num.toString().split('');
+// for (let i = newnum.length -1; i >= 0; i--){
+//     let revers = newnum[i]
+//     arr.push(revers)
+// }
+// console.log(arr.join())
