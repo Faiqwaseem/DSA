@@ -601,4 +601,50 @@
 //     let revers = newnum[i]
 //     arr.push(revers)
 // }
-// console.log(arr.join())
+// console.log(arr.join(""))
+
+
+
+// const arr = [10, 5, 20, 8, 15];
+// let largest = arr[0];
+// let secLargest = arr[0];
+
+// for (let i = 0; i < arr.length; i++){
+//     if (arr[i] > largest) {
+//         secLargest = largest
+//         largest = arr[i]
+//     }
+//     else if (arr[i] > secLargest) {
+//         secLargest = arr[i]
+//     }
+// }
+
+// Question: Check karo ke string palindrome hai ya nahi.
+// const str = "hello";
+// let arr = []
+// let arrString = str.slice('');
+// for (let i = arrString.length -1; i >= 0; i--){
+//     arr.push(arrString[i]);
+// };
+// let test = arr.join("")
+// console.log(test , str)
+// if (test === str) {
+//     console.log("palindrome")
+// } else {
+//     console.log("Not a plalindrome")
+// }
+
+const arr = [2, 7, 11, 15];
+const target = 9;
+
+function twoSum(arr, target) {
+    for (let i = 0; i < arr.length; i++){
+    for (let j = i + 1; i < arr.length; j++){
+        if (arr[i] + arr[j] === target){
+            return [i, j]
+        }
+    }
+    return []
+}
+}
+console.log(twoSum(arr, target))
