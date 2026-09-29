@@ -634,17 +634,32 @@
 //     console.log("Not a plalindrome")
 // }
 
-const arr = [2, 7, 11, 15];
-const target = 9;
+// const arr = [2, 7, 11, 15];
+// const target = 9;
 
-function twoSum(arr, target) {
-    for (let i = 0; i < arr.length; i++){
-    for (let j = i + 1; i < arr.length; j++){
-        if (arr[i] + arr[j] === target){
-            return [i, j]
-        }
-    }
-    return []
+// function twoSum(arr, target) {
+//     for (let i = 0; i < arr.length; i++){
+//     for (let j = i + 1; i < arr.length; j++){
+//         if (arr[i] + arr[j] === target){
+//             return [i, j]
+//         }
+//     }
+//     return []
+// }
+// }
+// console.log(twoSum(arr, target))
+
+
+const num = 1221;
+let arr = []
+let arrString = num.toString().slice("");
+for (let i = arrString.length -1; i >= 0; i--){
+    arr.push(arrString[i]);
+};
+let test = arr.join("")
+console.log(test , num)
+if (test == num) {
+    console.log("palindrome")
+} else {
+    console.log("Not a plalindrome")
 }
-}
-console.log(twoSum(arr, target))
