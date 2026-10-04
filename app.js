@@ -650,16 +650,71 @@
 // console.log(twoSum(arr, target))
 
 
-const num = 1221;
-let arr = []
-let arrString = num.toString().slice("");
-for (let i = arrString.length -1; i >= 0; i--){
-    arr.push(arrString[i]);
-};
-let test = arr.join("")
-console.log(test , num)
-if (test == num) {
-    console.log("palindrome")
-} else {
-    console.log("Not a plalindrome")
+// const num = 1221;
+// let arr = []
+// let arrString = num.toString();
+// for (let i = arrString.length -1; i >= 0; i--){
+//     arr.push(arrString[i]);
+// };
+// let test = arr.join("")
+// console.log(test , num)
+// if (test == num) {
+//     console.log("palindrome")
+// } else {
+//     console.log("Not a plalindrome")
+// }
+
+// 🔥 Q24 — Count Digits
+
+// const num = 583921;
+// let count = 0;
+// let numString = num.toString().split('');
+// for (let i = 0; i < numString.length; i++){
+//     count++
+// }
+
+// console.log(count);
+
+
+
+
+// const arr = [5, 2, 9, 1, 7];
+// let max = arr[0]
+// for (let i = 0; i < arr.length; i++){
+//     if (arr[i] > max) {
+//         max = arr[i]
+//     }
+// }
+// console.log(max)
+
+
+
+// const str = "madam";
+// let arr = str.split("")
+// let newArr = []
+// for (let i = arr.length -1; i >= 0; i--){
+//     newArr.push(arr[i]);
+// }
+// let newStr = newArr.toString("");
+// if (newArr.join("") === str) {
+//     console.log("Palinedrom")
+// }
+// else {
+//     console.log("Not Palinedrome")
+// }
+
+
+
+const arr = [2, 7, 11, 15];
+const target = 9;
+
+const map = new Map();
+
+for (let i = 0; i < arr.length; i++){
+    const complement = target - arr[i];
+    if (map.has(complement)) {
+        console.log([map.get(complement), i]);
+        break;
+    }   
+    map.set(arr[i], i);
 }
