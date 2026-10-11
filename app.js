@@ -705,16 +705,62 @@
 
 
 
-const arr = [2, 7, 11, 15];
+// const arr = [2, 7, 11, 15];
+// const target = 9;
+
+// const map = new Map();
+
+// for (let i = 0; i < arr.length; i++){
+//     const complement = target - arr[i];
+//     if (map.has(complement)) {
+//         console.log([map.get(complement), i]);
+//         break;
+//     }
+//     map.set(arr[i], i);
+// }
+
+
+// const numbers = [12, 5, 30, 8, 21];
+
+// let max = numbers[0];
+
+// for (let i = 0; i < numbers.length; i++) {
+//     if (numbers[i] > max) {
+//         max = numbers[i]
+//     }
+    
+// }
+// console.log(max)
+
+
+
+
+// const str = "faiq";
+// let arr = str.split('');
+// let plindromeArr = []
+// for (let i = arr.length -1; i >= 0; i--){
+//     console.log(arr[i])
+//     plindromeArr.push(arr[i])
+// }
+// let plalindrome = plindromeArr.join('')
+// console.log(plalindrome)
+// if (plalindrome == str) {
+//     console.log("Plindrome")
+// } else {
+//     console.log("Not plindrome")
+// }
+
+const nums = [2, 7, 11, 15];
 const target = 9;
 
-const map = new Map();
-
-for (let i = 0; i < arr.length; i++){
-    const complement = target - arr[i];
-    if (map.has(complement)) {
-        console.log([map.get(complement), i]);
-        break;
-    }   
-    map.set(arr[i], i);
+function twoSum(nums, target) {
+    for (let i = 0; i < nums.length; i++){
+    for (let j = i + 1; i < nums.length; j++){
+        if (nums[i] + nums[j] === target) {
+            return [i, j]
+        }
+        }
+        return []
 }
+}
+console.log(twoSum(nums, target));
