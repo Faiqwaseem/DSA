@@ -719,48 +719,127 @@
 //     map.set(arr[i], i);
 // }
 
-
+// find max number
 // const numbers = [12, 5, 30, 8, 21];
-
-// let max = numbers[0];
-
-// for (let i = 0; i < numbers.length; i++) {
+// let max = numbers[0]
+// for (let i = 0; i < numbers.length; i++){
 //     if (numbers[i] > max) {
 //         max = numbers[i]
 //     }
-    
 // }
-// console.log(max)
+// console.log("MAXImum", max)
 
 
 
 
-// const str = "faiq";
-// let arr = str.split('');
-// let plindromeArr = []
-// for (let i = arr.length -1; i >= 0; i--){
+// const str = "madam";
+
+// let reverce = str.split("").reverse().join("").toString()
+// if (reverce === str) {
+//     console.log("Plaindrome")
+// } else {
+//     console.log("Not Plindrome")
+// }
+
+
+// let arr = str.split("");
+// let revercesArr = [];
+// for (let i = arr.length - 1; i >= 0; i--){
 //     console.log(arr[i])
-//     plindromeArr.push(arr[i])
+//     revercesArr.push(arr[i])
 // }
-// let plalindrome = plindromeArr.join('')
-// console.log(plalindrome)
-// if (plalindrome == str) {
+// let reverceStr = revercesArr.join("").toString("")
+// console.log(reverceStr)
+
+// if (reverceStr === str) {
+//     console.log("Plaindrome")
+// } else {
+//     console.log("Not Plindrome")
+// }
+
+
+
+// const nums = [2, 7, 11, 15];
+// const target = 9;
+
+// function twoSum(nums, target) {
+//     for (let i = 0; i < nums.length; i++){
+//         for (let j = i + 1; i < nums.length; j++){
+//             if (nums[i] + nums[j] === target) {
+//                 return [i, j]
+//             }
+//         }
+//         return []
+//     }
+// }
+
+// console.log(twoSum(nums, target))
+
+// const numbers = [1, 2, 3, 2, 4, 1];
+
+// for (let i = 0; i < numbers.length; i++){
+//     for (let j = i + 1; j < numbers.length; j++){
+//         if (numbers[i] === numbers[j]) {
+//             console.log(numbers[i])
+//         }
+//     }
+// }
+
+
+
+
+// const arr = [1, 2, 2, 3, 4, 4, 5, 5];
+
+// let newArr = [];
+// for (let i = 0; i < arr.length; i++){
+//     let isduplicate = false
+//     for (let j = 0; j < newArr.length; j++){
+//         if (arr[i] === newArr[j]) {
+//             isduplicate = true;
+//             break;
+//         }
+//     }
+//     if(!isduplicate) newArr.push(arr[i])
+// }
+// console.log(newArr)
+
+
+
+
+// const arr = [1, 2, 2, 3, 4, 4, 5, 5];
+// let arrNew = [];
+// for (let i = 0; i < arr.length; i++){
+//     let count = 0;
+//     if (arrNew.includes[arr[i]]) continue;
+//     arrNew.push(arr[i])
+
+//     for (let j = 0; j < arr.length; j++){
+//         if (arr[i] === arr[j]) {
+//             count++
+//         }
+//     }
+//     console.log(arrNew[i], count)
+// }
+
+
+let str = "madam"
+// let reverce = str.split("").reverse().join("")
+// console.log(reverce)
+// if (reverce == str) {
 //     console.log("Plindrome")
 // } else {
-//     console.log("Not plindrome")
+//     console.log("Not Plindrome");
 // }
 
-const nums = [2, 7, 11, 15];
-const target = 9;
-
-function twoSum(nums, target) {
-    for (let i = 0; i < nums.length; i++){
-    for (let j = i + 1; i < nums.length; j++){
-        if (nums[i] + nums[j] === target) {
-            return [i, j]
-        }
-        }
-        return []
-}
-}
-console.log(twoSum(nums, target));
+// let arr = str.split("")
+// let reverse = []
+// for (let i = arr.length - 1; i >= 0; i--){
+//     console.log(arr[i])
+//     reverse.push(arr[i]);
+// }
+// let reverseStr = reverse.join("");
+// if (reverseStr == str) {
+//     console.log("Plindrome")
+// } else {
+//     console.log("Not Plindrome");
+// }
